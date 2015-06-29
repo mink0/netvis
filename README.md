@@ -5,11 +5,11 @@ Since all nodes are rendered in SVG user can use the built-in browser search. It
 
 Currently this application is not ready for production and is used for my own administrative tasks only.
 
-![ScreenShot](https://raw.github.com/minkolazer/neteye/master/neteye-1.png)
+![ScreenShot](https://raw.github.com/minkolazer/netvis/master/neteye-1.png)
 
-![ScreenShot](https://raw.github.com/minkolazer/neteye/master/neteye-2.png)
+![ScreenShot](https://raw.github.com/minkolazer/netvis/master/neteye-2.png)
 
-![ScreenShot](https://raw.github.com/minkolazer/neteye/master/neteye-3.png)
+![ScreenShot](https://raw.github.com/minkolazer/netvis/master/neteye-3.png)
 
 Copyright (C) 2014 by Minko
 
