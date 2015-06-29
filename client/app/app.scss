@@ -1,0 +1,90 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+$fa-font-path: "/bower_components/font-awesome/fonts";
+
+@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+@import 'font-awesome/scss/font-awesome';
+//@import url(http://fonts.googleapis.com/css?family=Lato);
+
+/**
+ * App-wide Styles
+ */
+
+// Component styles are injected through grunt
+// injector
+@import 'fullmap/fullmap.scss';
+@import 'fullmap/index/index.scss';
+@import 'main/main.scss';
+@import 'map/map.scss';
+// endinjector
+
+/**
+ * loading bar
+ */
+
+#loading-bar .bar {
+  background: #E52346;
+  height: 4px;
+}
+
+/**
+ * Noise effect
+ */
+
+.noise{
+  color:white;
+  font-size:100px;
+  position:relative;
+  // width:400px;
+  margin:0 auto;
+}
+@keyframes noise-anim{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+.noise:after{
+  content:attr(data-text);
+  position:absolute;
+  left:2px;
+  text-shadow:-1px 0 red;
+  top:0;
+  color:white;
+  background: #4393B9;
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+.noise:before{
+  content:attr(data-text);
+  position:absolute;
+  left:-2px;
+  text-shadow:1px 0 blue; 
+  top:0;
+  color:white;
+  background: #4393B9;
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+/**
+ * Noise effect
+ */
+
+.navbar {
+  margin-bottom: 0 !important;
+  border-bottom: 1px solid #fff !important;
+}
+

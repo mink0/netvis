@@ -1,0 +1,32 @@
+.page-container-full {
+  width: 3750px;
+  height: 1000px;
+  background-color: #4393B9;
+}
+
+#paper-full {
+  display: inline-block;
+  margin: 50px;
+
+  border-radius: 2px;
+  background-color: #F4F4F4; //#F5F5F5; #F0F0F0
+  box-shadow: 
+    0 0 100px rgba(0,0,0,.5);
+    //inset 0 0 10px rgba(0,0,0,.5);
+
+  border: 1px solid #fff;
+
+  .title {
+    background-color: #4D4D4D;
+    color: #f5f5f5;
+    padding: 7px 0;
+    font-size: 16px;
+    // font-weight: bold;
+    border-left: 1px solid transparent;
+  }
+}
+
+.footer-full {
+  color: #fff;
+  font-size: 12px;
+}

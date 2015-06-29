@@ -1,0 +1,22 @@
+#fullmap-index {
+  h1 {
+    font-size: 80px; 
+    color: #fff;
+    line-height: 1;
+    letter-spacing: -3px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .site-wrapper-full {
+    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    background: #4393B9;
+  }
+
+  .jumbotron {
+    // background-color: #eee;
+    padding: 30px 30px 20px 30px;
+    box-shadow: 0 0 100px rgba(0,0,0,.5);
+  }
+}

@@ -1,0 +1,44 @@
+div(ng-include='"components/navbar/navbar.html"')
+.site-wrapper
+  .hero-unit
+    .container
+      .row
+        h1 NETMAP
+        //- h5 Выберите расположение, для которого хотите нарисовать карту
+          //- span.small :: ipdb
+        //- div.noise(data-text='NET EYE') NET EYE
+        //- p.lead Введите dns-имя или ip-адрес устройства
+      .row
+        div.col-sm-offset-3.col-sm-6.search-bar
+          //- angucomplete#search-main(placeholder='Поиск' pause='400' minlength='2' selectedobject='search.val' url='/api/loca?q=' titlefield='path' inputclass='form-control')
+
+          form(ng-submit='submitSearch()')
+            .form-group          
+              p.help-block {{search.hint}}
+              div.input-group
+                input.form-control(
+                  type='text', 
+                  placeholder='Поиск', 
+                  ng-model='search.val', 
+                  typeahead='item.obj_id as item.path for item in getTypeahead($viewValue)', 
+                  typeahead-wait-ms='100', 
+                  typeahead-editable='false',
+                  typeahead-append-to-body='false',
+                  typeahead-loading='search.loading',
+                  typeahead-on-select='submitSearch($item, $model, $label)'
+                )
+
+                //- input.form-control(type='text', placeholder='Поиск', autocomplite='on', list='search-list', ng-model='search.val', ng-change='onSearchEdit(search.val)')
+                //- datalist#search-list
+                //-   select
+                //-     option(ng-repeat='loc in search.options', value='{{loc.obj_id}}') {{loc.path}}
+
+                //- select.form-control(ng-model='search.val', placeholder='Поиск')
+                //- select.form-control(ui-select2='search.s2opts' ng-model='search.val' data-placeholder='Поиск')
+                //-   //- option(ng-repeat='loc in search.options', value='{{loc.obj_id}}') {{loc.path}}
+                span.input-group-btn
+                  //- a.btn.btn-default(href='/map?loc={{search.val}}') Перейти
+                  button.btn.btn-default(type='submit') Перейти
+  .footer
+    .container
+      p :: РКК "Энергия" © 2014 :::: ВЦ 414 ::

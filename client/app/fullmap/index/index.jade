@@ -1,0 +1,22 @@
+div(ng-include='"components/navbar/navbar.html"')
+#fullmap-index
+  .site-wrapper-full
+      .container
+        .row.text-center
+          h1 CISCO
+            span.small :: map
+        .row
+          div.col-sm-offset-3.col-sm-6.jumbotron
+            form(ng-submit='submit()')
+              p.help-block.text-center {{search.hint}}
+              .form-group
+                input.form-control(type='text' placeholder='Адрес или DNS имя' ng-model='search.name')
+              .form-group
+                input.form-control(type='password' placeholder='Строка community' ng-model='search.comm')
+              .text-center
+                button.btn.btn-success(type='submit') Построить
+
+    .footer
+      .container
+        p :: РКК "Энергия" © 2014 :::: ВЦ 414 ::
+
