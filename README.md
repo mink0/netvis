@@ -10,11 +10,11 @@ Currently this application is not ready for production and is used for my own ad
 
 Copyright (C) 2014
 
-![ScreenShot](https://raw.github.com/minkolazer/netvis/master/neteye-1.png)
+![ScreenShot](https://raw.github.com/mink0/netvis/master/neteye-1.png)
 
-![ScreenShot](https://raw.github.com/minkolazer/netvis/master/neteye-2.png)
+![ScreenShot](https://raw.github.com/mink0/netvis/master/neteye-2.png)
 
-![ScreenShot](https://raw.github.com/minkolazer/netvis/master/neteye-3.png)
+![ScreenShot](https://raw.github.com/mink0/netvis/master/neteye-3.png)
 
 
 
